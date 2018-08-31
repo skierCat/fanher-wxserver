@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html">
+<html>
+<head>
+<title>小饭盒</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="{@static_url("css/main.css")@}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{@static_url("js/vue.js")@}" ></script>
+<script type="text/javascript" src="{@static_url("js/vue-resource.js")@}" ></script>
+</head>
+<body>
+	<div class="upload-body" id="upload">
+		<input type="file" id="gz_file" class="form-control" />
+		<input type="text" id="month" class="form-control" placeholder="请输入例如2016-01-01" v-model="month"/>
+		<button v-on:click="upload" type="submit" class="pure-button">解&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;析</button>
+	<p id="ceshi">文件名:{{ file_name }}</p>
+	<p id="receive">文件类型:{{ file_type }}</p>
+	<p id="receive">文件大小:{{ file_size }}</p>
+	</div>
+<script src="{@static_url("js/finance.js")@}" /></script>
+</body>
+</html>

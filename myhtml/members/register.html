@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<title>小饭盒</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="{@static_url("css/main.css")@}" rel="stylesheet" type="text/css" />
+<script src="{@static_url("js/vue.js")@}" ></script>
+<script src="{@static_url("js/vue-resource.js")@}" ></script>
+</head>
+<body>
+	<div class="register-body" id="register">
+		<input type="text" name="name" id="name" class="form-input" placeholder="请输入您的姓名" v-model.trim="form_name" /> 
+		<input type="text" name="xmb" id="xmb" class="form-input" placeholder="请选择您的项目部" v-model.trim="form_xmb" /> 
+		<input type="password" name="password" id="password" class="form-input" placeholder="请输入密码" v-model.trim="form_password" /> 
+		<input type="password" name="re_password" id="password" class="form-input" placeholder="请确认密码" v-model.trim="form_re_password" /> 
+		<input type="text" name="tel" id="tel" class="form-input" placeholder="请输入电话号码" v-model.trim="form_tel" />
+		<input type="password" name="keypass" id="keypass" class="form-input" placeholder="请输入今日动态码" v-model.trim="form_keypass" />
+		<button class="pure-button" v-on:click="submit">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+	</div>
+<script src="{@static_url("js/members.js")@}" ></script>
+</body>
+</html>
+

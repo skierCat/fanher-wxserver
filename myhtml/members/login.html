@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html">
+<html>
+<head>
+<title>小饭盒</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="{@static_url("css/login.css")@}" rel="stylesheet"
+	type="text/css" />
+<script type="text/javascript" src="{@static_url("js/jquery3.min.js")@}"></script>
+<script type="text/javascript" src="{@static_url("js/jquery.particleground.min.js")@}"></script>
+<script type="text/javascript" src="{@static_url("js/login.js")@}"></script>
+<script type="text/javascript" src="{@static_url("js/vue.js")@}"></script>
+<script type="text/javascript" src="{@static_url("js/vue-resource.js")@}"></script>
+</head>
+<body>
+<div id="particles">
+</div>
+
+<div id="loginform">
+<div id="mainlogin">
+<h1>登录</h1>
+<div id="login">
+<input type="text"  name="id" placeholder="用户名或者手机号"   v-model.trim="form_id" />
+<input type="password" name="pass" placeholder="密码" value=""  v-model.trim="form_pass" />
+<button  v-on:click="login" type="submit"><i class="fa fa-arrow-right">登录</i></button>
+</div>
+<div id="note"><a href="#">注册用户！</a></div>
+</div>
+<script src="{@static_url("js/login.js")@}" /></script>
+</body>
+</html>

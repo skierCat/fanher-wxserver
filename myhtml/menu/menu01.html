@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html">
+<html>
+<head>
+<title>祥云系统</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="{{static_url(" css/login.css")}}" rel="stylesheet"
+	type="text/css" />
+
+<script type="text/javascript" src="{{static_url("js/three.min.js")}}"></script>
+</head>
+<body>
+	<script type="text/javascript" src="{{static_url("js/login.js")}}"></script>
+	<div class="login-body">
+		<div class="pure-control-group">
+			<div class="t-themef">凭&nbsp;&nbsp;证</div>
+		</div>
+		<div id=mypad>
+			<form id="form_login" action="/" method="post" class="pure-form">
+				<div class="pure-control-group">
+					<input type="text" name="keyword" id="user_name"
+						class="form-control" placeholder="请输出关键字" />
+				</div>
+
+				<div class="pure-control-group">
+					<input type="password" name="keypass" id="user_pass"
+						class="form-control" placeholder="请输入今日动态码">
+				</div>
+
+				<div class="pure-submit">
+					<button type="submit" class="pure-button">查&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;询</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="LoR"></div>
+</body>
+</html>

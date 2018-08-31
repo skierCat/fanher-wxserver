@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html">
+<html>
+<head>
+<title>小饭盒</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link href="{@static_url("css/main.css")@}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{@static_url("js/vue.js")@}" ></script>
+<script type="text/javascript" src="{@static_url("js/vue-resource.js")@}" ></script>
+</head>
+<body>
+	<div class="login-body" id="login">
+		<input type="text" name="id" id="user_id" class="form-control" placeholder="请输入您的识别码或手机号"  v-model.trim="form_id" /> 
+		<input type="password" name="pass" id="user_pass" class="form-control" placeholder="请输入今日动态码或密码" v-model.trim="form_pass" />
+		<button v-on:click="login" type="submit" class="pure-button">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+	<p id="ceshi">输入的ID:{{ form_id }}</p>
+	<p id="receive">接受的数据:{{ receive_data }}</p>
+	</div>
+<script src="{@static_url("js/login.js")@}" /></script>
+</body>
+</html>
